@@ -1,39 +1,32 @@
 :root {
-    dark-orange: "#ea5321";
-    main-olive: "#BCA508";
-    light-orange: "#F28C10";
-    main-yellow: "#F4C200";
-    main-pink: "#F4A7AD;
+	dark-orange: '#ea5321';
+	main-olive: '#BCA508';
+	light-orange: '#F28C10';
+	main-yellow: '#F4C200';
+	main-pink: '#F4A7AD';
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+	font-family: 'Raleway', sans-serif;
 }
 
-.headerlogo{
-    height: 75px;
-    
+.headerlogo {
+	height: 75px;
 }
 
-.primary-nav{
-
+.primary-nav {
 }
 
-ul{
-    
+ul {
 }
 
-.navlink1{
-
+.navlink1 {
 }
-.navlink2{
-
+.navlink2 {
 }
 
-.navlink3{
-
+.navlink3 {
 }
 
-.navlink4{
-
+.navlink4 {
 }
