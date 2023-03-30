@@ -1,6 +1,8 @@
 # soh-website
 
-### Hællæ
+### Se nettsiden
+
+https://dazzling-lebkuchen-57dbdb.netlify.app/
 
 ## Git add .
 
