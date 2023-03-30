@@ -1,3 +1,11 @@
+:root {
+    dark-orange: "#ea5321";
+    main-olive: "#BCA508";
+    light-orange: "#F28C10";
+    main-yellow: "#F4C200";
+    main-pink: "#F4A7AD;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
 }
