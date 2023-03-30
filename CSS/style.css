@@ -1,3 +1,5 @@
+@import url('./navbar.css');
+
 :root {
 	--dark-orange: '#ea5321';
 	--main-olive: '#BCA508';
@@ -13,65 +15,37 @@ body {
 	margin: 0%;
 	padding: 0%;
 }
-header {
+
+#hero {
 	width: 100vw;
-	height: 80px;
+	height: 60vh;
+	background-color: aquamarine;
 }
-.primary-nav {
-	padding: 5px;
-	padding-inline: 0px;
+
+#about {
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
-	width: 100%;
+	justify-content: space-evenly;
+	gap: 4rem;
+	padding-top: 2rem;
+}
+
+.about-card {
+	width: 90%;
+	height: 550px;
+	display: flex;
+	background-color: aqua;
+}
+.about-card:nth-child(2) {
+	flex-direction: row-reverse;
+}
+
+.about-img {
+	width: 50%;
 	height: 100%;
-}
-.logo-container {
-	margin-inline-start: 1rem;
-
-	height: 100%;
-	width: 200px;
-}
-ul {
-	margin-inline-end: 1rem;
-	padding: 0%;
-
-	list-style: none;
-
-	width: 70%;
-	height: 100%;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 50%;
-	width: calc(100% / 7);
-}
-
-a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	text-decoration: none;
-	color: black;
-}
-
-.orange {
-	color: rgb(255, 166, 0);
-	font-weight: 700;
-}
-
-.button {
-	border-radius: 6px;
-	height: 40px;
-	width: 120px;
-	background-color: orange;
-	color: white;
+	background-color: bisque;
 }
