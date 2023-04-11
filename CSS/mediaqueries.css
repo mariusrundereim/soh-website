@@ -1,0 +1,6 @@
+@media (max-width: 320px) {
+  .about-card {
+    flex-direction: row;
+    border: 10px solid red;
+  }
+}

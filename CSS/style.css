@@ -1,4 +1,5 @@
 @import url("./navbar.css");
+@import url("./mediaqueries.css");
 
 :root {
   --dark-orange: #ea5321;
@@ -40,6 +41,7 @@ body {
   display: flex;
   background-color: var(--main-pink);
 }
+
 .about-card:nth-child(2) {
   background: var(--main-yellow);
   flex-direction: row-reverse;
@@ -49,4 +51,10 @@ body {
   width: 50%;
   height: 100%;
   background-image: url(/Images/frontpage_picture_01.png);
+}
+
+.about-logo {
+  min-width: 100px;
+  width: 180px;
+  max-width: 300px;
 }
