@@ -1,51 +1,52 @@
-@import url('./navbar.css');
+@import url("./navbar.css");
 
 :root {
-	--dark-orange: '#ea5321';
-	--main-olive: '#BCA508';
-	--light-orange: '#F28C10';
-	--main-yellow: '#F4C200';
-	--main-pink: '#F4A7AD';
+  --dark-orange: #ea5321;
+  --main-olive: #bca508;
+  --light-orange: #f28c10;
+  --main-yellow: #f4c200;
+  --main-pink: #f4a7ad;
 }
 
 html,
 body {
-	font-family: 'Raleway', sans-serif;
-	box-sizing: border-box;
-	margin: 0%;
-	padding: 0%;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
 #hero {
-	width: 100vw;
-	height: 60vh;
-	background-color: aquamarine;
+  width: 100vw;
+  height: 60vh;
+  background-color: aquamarine;
 }
 
 #about {
-	width: 100vw;
-	min-height: 100vh;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	gap: 4rem;
-	padding-top: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4rem;
+  padding-top: 2rem;
 }
 
 .about-card {
-	width: 90%;
-	height: 550px;
-	display: flex;
-	background-color: aqua;
+  width: 90%;
+  height: 550px;
+  display: flex;
+  background-color: var(--main-pink);
 }
 .about-card:nth-child(2) {
-	flex-direction: row-reverse;
+  background: var(--main-yellow);
+  flex-direction: row-reverse;
 }
 
 .about-img {
-	width: 50%;
-	height: 100%;
-	background-color: bisque;
+  width: 50%;
+  height: 100%;
+  background-image: url(/Images/frontpage_picture_01.png);
 }
