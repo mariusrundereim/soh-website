@@ -9,6 +9,11 @@
   --main-pink: #f4a7ad;
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Raleway", sans-serif;
@@ -57,4 +62,23 @@ body {
   min-width: 100px;
   width: 180px;
   max-width: 300px;
+}
+
+/* Våre tilbud */
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tilbud-card:nth-child(1) {
+  background: var(--main-pink);
+}
+
+.tilbud-card:nth-child(2) {
+  background: var(--main-olive);
+}
+
+.tilbud-card:nth-child(3) {
+  background: var(--main-yellow);
 }
