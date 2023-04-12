@@ -39,7 +39,10 @@ li {
   width: calc(100% / 7);
 }
 
-a {
+.navlink1,
+.navlink2,
+.navlink3,
+.navlink4 {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,16 @@
+.button-1 {
+  font-size: var(--font-s);
+  font-weight: 600;
+  color: black;
+  background: transparent;
+  border: 2px solid black;
+}
+
+.btn-style {
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.button-2 {
+  color: black;
+}
