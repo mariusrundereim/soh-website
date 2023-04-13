@@ -1,0 +1,30 @@
+.button-1 {
+  font-size: var(--font-s);
+  font-weight: 600;
+  color: black;
+  border: 2px solid black;
+}
+
+.button-2 {
+  color: black;
+}
+
+.button-3 {
+  font-size: var(--font-s);
+  font-weight: 600;
+  color: black;
+}
+
+.btn-style {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-pink {
+  background: var(--main-pink);
+}
+
+.bg-yellow {
+  background: var(--main-yellow);
+}

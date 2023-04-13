@@ -1,5 +1,6 @@
 @import url("./navbar.css");
 @import url("./mediaqueries.css");
+@import url("./button.css");
 
 :root {
   --dark-orange: #ea5321;
@@ -7,6 +8,16 @@
   --light-orange: #f28c10;
   --main-yellow: #f4c200;
   --main-pink: #f4a7ad;
+
+  --font-xl: 45px; /* H1 - Heading */
+  --font-l: 36px; /* H2 - Title */
+  --font-m: 26px; /* H3 - Subtitle */
+  --font-s: 18px; /* Paragraph */
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -15,7 +26,31 @@ body {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
+  background: #fdf9f6;
 }
+
+/* Fontstyles */
+
+h1 {
+  font-size: var(--font-xl);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--font-l);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--font-m);
+}
+
+h4 {
+  font-size: var(--font-s);
+}
+
+/* Frontpage */
 
 #hero {
   width: 100vw;
@@ -48,8 +83,9 @@ body {
 }
 
 .about-img {
-  width: 50%;
+  width: 100%;
   height: 100%;
+  flex-basis: 100%;
   background-image: url(/Images/frontpage_picture_01.png);
 }
 
@@ -57,4 +93,168 @@ body {
   min-width: 100px;
   width: 180px;
   max-width: 300px;
+}
+
+/* Våre tilbud */
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.tilbud-img-card {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tilbud-card {
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+.tilbud-card:nth-child(1) {
+  background: var(--main-pink);
+}
+
+.tilbud-card:nth-child(2) {
+  background: var(--main-olive);
+}
+
+.tilbud-card:nth-child(3) {
+  background: var(--main-yellow);
+}
+
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tilbud-text {
+  padding: 15px;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.tilbud-individuell {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Støtt oss */
+
+.support-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 20rem;
+  padding: 1.5rem;
+}
+
+.support-icon {
+  font-size: 3rem;
+}
+
+.support-card:nth-child(1) {
+  background: var(--main-pink);
+}
+
+.support-card:nth-child(2) {
+  background: rgba(244, 167, 173, 0.7);
+}
+
+.support-card:nth-child(3) {
+  background: var(--main-pink);
+}
+
+/* Nyheter */
+
+.news-img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.news-card {
+  display: flex;
+}
+
+.news-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .news-card {
+    flex-direction: column;
+  }
+}
+
+/* Partnere */
+
+.partnere {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  background: #ecded4;
+  min-height: 20rem;
+}
+
+.partnere-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.partnere-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.partnere-logo {
+  min-width: 80px;
+  width: 100%;
+  min-height: 30px;
+  max-height: 150px;
+}
+
+/* Footer */
+
+footer {
+  background: var(--main-pink);
+  min-height: 15rem;
+}
+
+.page-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-link {
+  font-size: var(--font-s);
+  color: black;
+  text-decoration: none;
+}
+
+.some-icon {
+  width: 32px;
+}
+
+.some-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-title {
+  margin-bottom: 1rem;
 }
